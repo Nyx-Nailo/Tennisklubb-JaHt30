@@ -1,0 +1,58 @@
+﻿body{
+    margin: 0px;
+    margin-top: 15px;
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+}
+
+div{
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    width: 100%;
+    margin-top: 2px;
+    overflow-wrap:anywhere;
+}
+
+hr{
+    color: red;
+    width: 75%;
+}
+
+/*----------------Id styles--------------*/
+
+#mainDiv{
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    
+    grid-column: 2 / span 1;
+    text-align:center;
+    overflow-y:auto;
+}
+
+#menyDiv{
+    width: 50%;
+    min-width: 100px;
+    height: auto;
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+
+#menyList{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    margin-top: 5px;
+}

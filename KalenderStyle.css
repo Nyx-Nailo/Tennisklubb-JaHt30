@@ -1,0 +1,10 @@
+﻿.KalenderTable{
+    text-align:center;
+    margin-left: 5px;
+
+
+    outline:dotted;
+    outline-color:black;
+    outline-width: 1px;
+
+}
