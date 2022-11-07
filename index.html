@@ -4,21 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <title>Tennis Booking</title>
-    <link rel="stylesheet" type="text/css" href="MainStyle.css" />
+    <link rel="stylesheet" type="text/css" href="mainStyle.css" />
+    <link rel="stylesheet" type="text/css" href="calendar.css" />
 </head>
 <body>
-    <div id="menyDiv">
+    <div class="menyDiv">
         <h1>Meny</h1>
         <hr />
-        <ul id="menyList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="kalender.html">Kalender</a></li>
-            <li><a href="omkladningsrum.html">Omklädningsrum</a></li>
+        <ul class="menyList">
+            <li>Home</li>
+            <li><a href="omkl.html">Omklädningsrum</a></li>
             <li><a href="bastu.html">Bastu</a></li>
         </ul>
     </div>
-    <div id="mainDiv">
-        <h1>Warhammer IF</h1>
+    <div class="mainDiv">
+        <h1>Tannefors IF</h1>
         <hr />
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -42,28 +42,56 @@
             lacus sed turpis tincidunt id aliquet risus feugiat in. Laoreet sit amet cursus sit. Risus in hendrerit
             gravida rutrum. Amet dictum sit amet justo donec enim diam vulputate ut.
         </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Feugiat vivamus at augue eget arcu dictum. Id interdum velit laoreet
-            id. Donec enim diam vulputate ut. Est pellentesque elit ullamcorper dignissim cras tincidunt. Felis
-            imperdiet proin fermentum leo vel orci. Cras adipiscing enim eu turpis egestas pretium. Volutpat lacus
-            laoreet non curabitur gravida arcu. Purus in massa tempor nec feugiat nisl pretium. Facilisis sed
-            odio morbi quis commodo odio aenean sed. Ac turpis egestas maecenas pharetra convallis. Morbi tristique
-            senectus et netus et malesuada fames. Erat imperdiet sed euismod nisi porta. Lorem ipsum dolor sit amet
-            consectetur. Amet cursus sit amet dictum sit amet. Libero justo laoreet sit amet cursus sit amet dictum
-            sit. Risus sed vulputate odio ut enim blandit. Quam adipiscing vitae proin sagittis nisl. Diam maecenas
-            sed enim ut. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam.
-        </p>
-        <p>
-            Nascetur ridiculus mus mauris vitae ultricies leo. Scelerisque fermentum dui faucibus in ornare quam
-            viverra. Quis auctor elit sed vulputate mi sit. Dui faucibus in ornare quam viverra orci sagittis. Aenean
-            et tortor at risus. Purus non enim praesent elementum facilisis leo vel fringilla. In hendrerit gravida
-            rutrum quisque non tellus orci ac. Amet facilisis magna etiam tempor orci eu lobortis elementum. Enim nunc
-            faucibus a pellentesque sit. Dictum fusce ut placerat orci nulla pellentesque dignissim. Platea dictumst
-            quisque sagittis purus sit amet volutpat consequat. Magna fringilla urna porttitor rhoncus dolor. Ultricies
-            lacus sed turpis tincidunt id aliquet risus feugiat in. Laoreet sit amet cursus sit. Risus in hendrerit
-            gravida rutrum. Amet dictum sit amet justo donec enim diam vulputate ut.
-        </p>
+        <h2>Kalender</h2>
+        <div class="calendarContainer">
+            <div class="header">
+                <ul class="weekdays">
+                    <li>Måndag</li>
+                    <li>Tisdag</li>
+                    <li>Onsdag</li>
+                    <li>Torsdag</li>
+                    <li>Fredag</li>
+                    <li>Lördag</li>
+                    <li>Söndag</li>
+                </ul>
+                <ul class="dayNumbers">
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                </ul>
+            </div>
+            <div class="timeSlotsContainer">
+                <ul class="timeSlots">
+                    <li>8:00</li>
+                    <li>9:00</li>
+                    <li>10:00</li>
+                    <li>11:00</li>
+                    <li>12:00</li>
+                    <li>13:00</li>
+                    <li>14:00</li>
+                    <li>15:00</li>
+                    <li>16:00</li>
+                    <li>17:00</li>
+                    <li>18:00</li>
+                    <li>19:00</li>
+                    <li>20:00</li>
+                </ul>
+            </div>
+            <div class="eventsContainer">
+                <div class="slot slot-1">
+                    <div class="eventStatus"></div>
+                    <span>Bastu bokad</span>
+                </div>
+                <div class="slot slot-2">
+                    <div class="eventStatus"></div>
+                    <span>Bastu bokad</span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

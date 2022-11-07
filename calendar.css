@@ -1,0 +1,104 @@
+﻿
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.calendarContainer {
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas:
+        ". header"
+        "timeSoltsContainer main";
+    background-color: white;
+}
+
+.weekdays,.dayNumbers{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.weekdays{
+    background-color: lightblue;
+}
+
+.dayNumbers{
+    min-height: 30px;
+}
+
+.header{
+    background-color: dimgrey;
+    grid-area: header;
+}
+
+.timeSlotsContainer{
+    background-color: lightgray;
+    grid-area: timeSoltsContainer;
+    justify-content: left;
+}
+
+.timeSlots{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeSlots li{
+    min-height: 60px;
+}
+
+/*.timeSlots li::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    z-index: 1;
+}*/
+
+.eventsContainer{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    grid-area: main;
+    position: relative;
+}
+
+.slot {
+    position: absolute;
+    background-color: darkblue;
+    border-radius: 5px;
+    z-index: 3;
+    color: white;
+    width: auto;
+    font-size: 12px;
+    /*  grid-row:
+        8:00 = 1
+        9:00 = 5
+        10:00 = 9
+        ...
+    */
+}
+
+.slot:hover{
+    cursor: pointer;
+}
+
+.slot-1{
+    height: 60px;
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 5px;
+}
+.slot-2 {
+    height: 60px;
+    grid-row: 1;
+    grid-column: 5;
+    margin-top: 5px;
+}

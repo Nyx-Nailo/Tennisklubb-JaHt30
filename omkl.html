@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Bastu Bokning</title>
+    <title>Omklädningsrums bokning</title>
     <link rel="stylesheet" type="text/css" href="MainStyle.css" />
 </head>
 <body>
@@ -12,14 +12,20 @@
         <hr />
         <ul class="menyList">
             <li><a href="index.html">Home</a></li>
-            <li><a href="omkl.html">Omklädningsrum</a></li>
-            <li>Bastu</li>
+            <li>Omklädningsrum</li>
+            <li><a href="bastu.html">Bastu</a></li>
         </ul>
     </div>
     <div class="mainDiv">
-        <h1>Bastu</h1>
+        <h1>Omklädningsrum</h1>
         <hr />
         <form action="index.html">
+            <div>
+                <input type="radio" id="men" value="Herrarnas" name="omkl"/>
+                <label for="men">Herrarnas</label>
+                <input type="radio" id="women" value="Damernas" name="omkl"/>
+                <label for="women">Damernas</label>
+            </div>
             <label for="name">Namn:</label>
             <input type="text" id="name" name="name" required/>
             <label for="name">Datum och tid:</label>
