@@ -1,13 +1,14 @@
 ﻿* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /*---------------------Generics-------------------*/
 body{
     margin-top: 15px;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 0;
+    grid-template-columns: 10vw 80vw 10vw; /* 1fr 2fr 1fr*/
     background-color:cadetblue;
 }
 
@@ -72,22 +73,25 @@ form input{
     background-color: rgb(255, 255, 255, 0.5);
 }
 
-.menyDiv {
-    width: 50%;
-    min-width: 100px;
-    height: fit-content;
-    grid-column: 1 / span 1;
+.menyDiv{
+    width: 100%;
+    min-width: 300px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100px;
+    grid-column: 2 / span 1;
     text-align: center;
-
     background-color: rgb(255, 255, 255, 0.5);
+}
+
+.menyDiv hr{
+    margin-top: 18px;
 }
 
 .menyList{
     list-style-type:none;
     margin: 0;
     padding: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }

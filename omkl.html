@@ -9,21 +9,20 @@
 <body>
     <div class="menyDiv">
         <h1>Meny</h1>
-        <hr />
-        <ul class="menyList">
-            <li><a href="index.html">Home</a></li>
-            <li>Omklädningsrum</li>
-            <li><a href="bastu.html">Bastu</a></li>
-        </ul>
+        <div class="menyList">
+            <a href="index.html">Home</a>
+            <a>Omklädningsrum</a>
+            <a href="bastu.html">Bastu</a>
+        </div>
+        <hr/>
     </div>
     <div class="mainDiv">
         <h1>Omklädningsrum</h1>
-        <hr />
         <form action="index.html">
             <div>
-                <input type="radio" id="men" value="Herrarnas" name="omkl"/>
+                <input type="checkbox" id="men" value="Herrarnas" name="omkl"/>
                 <label for="men">Herrarnas</label>
-                <input type="radio" id="women" value="Damernas" name="omkl"/>
+                <input type="checkbox" id="women" value="Damernas" name="omkl"/>
                 <label for="women">Damernas</label>
             </div>
             <label for="name">Namn:</label>
