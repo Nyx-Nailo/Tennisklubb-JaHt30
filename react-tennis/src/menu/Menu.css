@@ -1,0 +1,14 @@
+﻿#Menu {
+    grid-area: menu;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". buttons .";
+}
+#ButtonList{
+    grid-area: buttons;
+    max-width: 400px;
+    min-width: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+}
