@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\react-tennis",
+    "\\react-tennis\\public",
     "\\react-tennis\\src",
-    "\\react-tennis\\src\\content"
+    "\\react-tennis\\src\\content",
+    "\\react-tennis\\src\\menu"
   ],
-  "SelectedNode": "\\react-tennis\\src\\index.js",
+  "SelectedNode": "\\react-tennis\\src\\index.css",
   "PreviewInSolutionExplorer": false
 }

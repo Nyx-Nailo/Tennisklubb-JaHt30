@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import Menu from './menu/Menu.js';
-import Header from './header/Header.js';
+import Menu from './Menu.js';
+import Header from './Header.js';
 
 function Layout() {
     return (
