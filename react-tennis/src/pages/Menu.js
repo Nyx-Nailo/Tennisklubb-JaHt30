@@ -14,11 +14,11 @@ function Menu() {
                 <div id="BokaTrigger" onClick={() => { setOpenBoka(!openBoka); setOpenInfo(false) }}>Boka</div>
                 <div id="InfoTrigger" onClick={() => { setOpenInfo(!openInfo); setOpenBoka(false) }}>Info</div>
             </div>
-            <div class={`BokaDropdown ${openBoka ? "active" : "inactive"} `}>
+            <div class={`Dropdown ${openBoka ? "active" : "inactive"} `}>
                 <NavLink to="/banor" onClick={() => { setOpenBoka(false); setOpenInfo(false) }}>Banor</NavLink>
                 <NavLink to="/bastu" onClick={() => { setOpenBoka(false); setOpenInfo(false) }}>Bastu</NavLink>
             </div>
-            <div class={`BokaDropdown ${openInfo ? "active" : "inactive"} `}>
+            <div class={`Dropdown ${openInfo ? "active" : "inactive"} `}>
                 <NavLink to="/banor-info" onClick={() => { setOpenBoka(false); setOpenInfo(false) }}>Banor</NavLink>
                 <NavLink to="/omkl-info" onClick={() => { setOpenBoka(false); setOpenInfo(false) }}>Omklädningsrum</NavLink>
                 <NavLink to="/bastu-info" onClick={() => { setOpenBoka(false); setOpenInfo(false) }}>Bastu</NavLink>

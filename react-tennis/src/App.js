@@ -5,7 +5,7 @@ import { Home, OmklInfo, Bastu, BastuInfo, Banor, BanorInfo } from './pages/Cont
 
 function App() {
     return (
-        <div className="App">
+        <div class="App">
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Layout />}>

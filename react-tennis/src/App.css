@@ -33,7 +33,7 @@ body {
     grid-area: header;
 }
 
-/*           Menu-Start         */
+/*          Menu-Start          */
 #Menu {
     grid-area: menu;
     display: grid;
@@ -54,7 +54,7 @@ body {
         height: 100%;
     }
 
-.BokaDropdown.active {
+.Dropdown.active {
     display: block;
     grid-area: drop;
     max-width: 400px;
@@ -63,14 +63,54 @@ body {
     gap: 3px;
     margin: auto;
 }
-.BokaDropdown.inactive {
+.Dropdown.inactive {
     display: none;
 }
-/*           Menu-End         */
+/*          Menu-End            */
 
+/*          Booking-Start       */
+#Booking{
+    display: grid;
+    gap: 5px;
+    grid-template-areas:    "t t"
+                            "date info"
+                            "time info";
+}
+#Booking h2{
+    grid-area: t;
+}
+#Calendar{
+    grid-area: date;
+}
+#Times{
+    grid-area: time;
+}
+#Info{
+    grid-area: info;
+}
 
+#BookingTimeSolts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
+#nyBokning {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+/*          Booking-End         */
 
+@media only screen and (max-width: 600px) {
+    #Booking {
+        display: grid;
+        gap: 5px;
+        grid-template-areas:    "t"
+                                "date"
+                                "time"
+                                "info";
+    }
+}
 
 .App-logo {
   height: 40vmin;

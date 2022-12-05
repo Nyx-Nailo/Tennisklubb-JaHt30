@@ -4,9 +4,8 @@
     "\\react-tennis",
     "\\react-tennis\\public",
     "\\react-tennis\\src",
-    "\\react-tennis\\src\\content",
-    "\\react-tennis\\src\\menu"
+    "\\react-tennis\\src\\Pages"
   ],
-  "SelectedNode": "\\react-tennis\\src\\index.css",
+  "SelectedNode": "\\react-tennis\\src\\index.js",
   "PreviewInSolutionExplorer": false
 }
