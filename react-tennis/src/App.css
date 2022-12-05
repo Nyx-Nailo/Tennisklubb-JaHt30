@@ -1,0 +1,147 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: grey;
+    overflow-y: scroll;
+}
+
+.App {
+    text-align: center;
+    display: grid;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "menu"
+        "content"
+        "footer";
+}
+    .App div {
+        background-color: #61dafb;
+        font-size: 30px;
+    }
+
+#Main {
+    grid-area: content;
+}
+#Header {
+    grid-area: header;
+}
+
+/*          Menu-Start          */
+#Menu {
+    grid-area: menu;
+    display: grid;
+    grid-template-areas: "buttons"
+        "drop";
+}
+
+#ButtonList {
+    grid-area: buttons;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    margin: auto;
+}
+    #ButtonList a{
+        width: 100%;
+        height: 100%;
+    }
+
+.Dropdown.active {
+    display: block;
+    grid-area: drop;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    margin: auto;
+}
+.Dropdown.inactive {
+    display: none;
+}
+/*          Menu-End            */
+
+/*          Booking-Start       */
+#Booking{
+    display: grid;
+    gap: 5px;
+    grid-template-areas:    "t t"
+                            "date info"
+                            "time info";
+}
+#Booking h2{
+    grid-area: t;
+}
+#Calendar{
+    grid-area: date;
+}
+#Times{
+    grid-area: time;
+}
+#Info{
+    grid-area: info;
+}
+
+#BookingTimeSolts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#nyBokning {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+/*          Booking-End         */
+
+@media only screen and (max-width: 600px) {
+    #Booking {
+        display: grid;
+        gap: 5px;
+        grid-template-areas:    "t"
+                                "date"
+                                "time"
+                                "info";
+    }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

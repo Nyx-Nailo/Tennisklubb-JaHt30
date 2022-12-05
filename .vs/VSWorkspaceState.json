@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\react-tennis",
+    "\\react-tennis\\public",
+    "\\react-tennis\\src",
+    "\\react-tennis\\src\\Pages"
   ],
+  "SelectedNode": "\\react-tennis\\src\\index.js",
   "PreviewInSolutionExplorer": false
 }
