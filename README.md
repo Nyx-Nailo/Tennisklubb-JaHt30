@@ -1,6 +1,7 @@
 # Tennisklubb
-Innan kursen är klar så bör ni ha följande saker med på era bokningssystem:
-- Systemet skall vara responsibelt, anpassa sig till olika skärmstorlekar
-- det skall validera indata med hjälp av javascript och DOM
-- det bör använda någon form av dynamiska menyer, rullgardin eller liknande
-- det bör använda ett modernt javascript-bibliotek som React
+Innan kursen Ã¤r klar sÃ¥ bÃ¶r ni ha fÃ¶ljande saker med pÃ¥ era bokningssystem:
+- Systemet skall vara responsibelt, anpassa sig till olika skÃ¤rmstorlekar
+- det skall validera indata med hjÃ¤lp av javascript och DOM
+- det bÃ¶r anvÃ¤nda nÃ¥gon form av dynamiska menyer, rullgardin eller liknande
+- det bÃ¶r anvÃ¤nda ett modernt javascript-bibliotek som React
+
